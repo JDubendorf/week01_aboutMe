@@ -1,0 +1,112 @@
+html {
+	font-family: "Helvetica", sans-serif;
+	}
+body {
+	margin: 0;
+	padding: 0;
+	}
+@media only screen and (min-width: 768px) {
+	body {
+		margin: 0 5% 50px 5%;
+		}
+	}
+/* from w3schools: for responsive grid, ensure all html elements 
+have box-sizing property set to border-box */
+* {
+    box-sizing: border-box;
+	}
+/* selects every element whose class contains the substring "col-",
+on small devices all columns 100% width, for larger screens columns float left */
+[class*="col-"] {
+   	width: 100%;
+   	float: left;
+    padding: 0;
+    margin: 0;
+    }
+/* 12 column grid at or above a screen width of 768px */
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.3333%;}
+.col-2 {width: 16.6666%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.3332%;}
+.col-5 {width: 41.6665%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.3331%;}
+.col-8 {width: 66.6664%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.333%;}
+.col-11 {width: 91.6663%;}
+.col-12 {width: 100%;}
+	}
+/* from w3schools: The columns inside a row are all floating to the left, 
+and are therefore taken out of the flow of the page, and other elements will 
+be placed as if the columns does not exist. To prevent this, we will add a 
+style that clears the flow */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+	}
+/* http://css-snippets.com/simple-horizontal-navigation/ used as reference
+for navbar */
+.nav ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	}
+.nav li {
+	font-size: 1.1em;
+	line-height: 35px;
+	height: 35px;
+	}
+.nav a {
+	background-color: lightgrey;
+	text-decoration: none;
+	color: navy;
+	display: block;
+	transition: .3s background-color;
+	border: 1px solid grey;
+	}
+.nav a:hover {
+	background-color: lightgreen;
+	color: white;
+	}
+.nav a.active {
+	background-color: purple;
+	color: white;
+	}
+.margin {
+    margin: 2px 5px 2px 5px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+	}
+.marginTwo {
+	padding: 0 0 0 5px;
+	}
+h1, h2 {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	}
+.listJames {
+	list-style-type: disc
+	}
+img {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+    border-radius: 2px;
+    border: 3px solid #EEEEEE;
+	}
+figure { 
+    display: block;
+    margin: 2px;
+	}
+figcaption {
+	text-align: center;
+	margin-top: 3px;
+	}
+pre {
+	font-family: "Helvetica", sans-serif;
+	}
